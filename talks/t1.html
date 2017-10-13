@@ -1,6 +1,14 @@
 <html>
   <head>
+    <title>Barcelona Perl & Friends 2017</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content= "'SPIDERS, GOPHERS & BUTTERFLIES' by Sue Spencer"/>
     <meta property="og:site_name" content="Barcelona Perl & Friends 2017"/>
@@ -8,10 +16,42 @@
     <meta property="og:description" content="A little Go vs Perl 6 concurrency" />
     <meta property="og:image" content="http://friends.barcelona.pm/images/og-image.png" />
   </head>
-  <body>
+  <body class="landing">
+
+    <!-- Page Wrapper -->
+      <div id="page-wrapper">
+
+        <!-- Banner -->
+          <section id="banner">
+            <div class="inner">
+              <h2>
+                <div class="principal">Barcelona</div>
+                Perl & Friends
+              </h2>
+              <h3>Saturday 4 Nov 2017</h3>
+              <ul class="actions">
+                <li><a href="https://goo.gl/forms/Q4oDujaF5i8sjJ7g2" class="button fit special">Register</a></li>
+                <li><a href="https://goo.gl/forms/gSQXo4yMkoOI2i7q1" class="button fit">Submit a talk</a></li>
+              </ul>
+            </div>
+          </section>
+
+  
+          </div>
     <script>
         var path = window.location.pathname;
-        window.location = path.replace(/talks\//,'#');
+        if (!path.match(/#/)) window.location = path.replace(/talks\//,'#');
+        
     </script>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
 </body>
 </html>
