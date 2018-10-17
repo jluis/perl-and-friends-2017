@@ -140,7 +140,7 @@ sub build_talk_ogg  {
                   strokewidth => 3, 
                   stroke      => 'white',
                   fill        => 'none',
-                  points      => '370,410,900,410',);
+                  points      => '270,410,900,410',);
     mkdir("$root_dir/$dest") unless -e "$root_dir/$dest";
     $image->Write("$root_dir/$dest/$id.png");
     undef $image;
